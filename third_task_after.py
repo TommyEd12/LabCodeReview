@@ -46,25 +46,25 @@ class LinkedList:
         return current
 
     #Непонятное название метода
-    def displayNodes(self):
+    def display_nodes(self):
         current = self.head
         while current:
             print(current.data, end=" -> ")
             current = current.next
         print("None")
 
-
-ll = LinkedList()
-n = int(input("Введите количество элементов в списке (не менее 4): "))
+#названия переменных из одной буквы
+new_list = LinkedList()
+list_length = int(input("Введите количество элементов в списке (не менее 4): "))
 #Непонятный вывод для пользователя
 node_value = int(input("Введите значение узла: "))
-for i in range(n):
+for i in range(list_length):
     data = int(input(f"Введите значение для элемента {i+1}: "))
-    ll.append(data)
-ll.insert_after_every_fourth(node_value)
+    new_list.append(data)
+new_list.insert_after_every_fourth(node_value)
 print("Содержимое списка после вставки:")
-ll.displayNodes()
-P2 = ll.get_last_element()
+new_list.display_nodes()
+P2 = new_list.get_last_element()
 if P2:
     #Непонятный вывод программы (ссылка на объект Node)
     print(f"Значение последнего элемента: {P2.data}")
