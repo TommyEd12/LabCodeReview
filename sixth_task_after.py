@@ -60,7 +60,6 @@ class IntListB:
             self.current = new_node  # Если список был пуст, текущий узел указывает на новый
 
     def is_barrier(self, node):
-        """Проверяет, является ли узел барьерным."""
         return node == self.barrier
 
     def delete_current(self):

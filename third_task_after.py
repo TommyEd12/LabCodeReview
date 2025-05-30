@@ -3,12 +3,15 @@
  вывести ссылку на последний элемент полученного списка P2."""
 #Ряд комментариев, а не docstring
 class Node:
+
     def __init__(self, data):
         self.data = data
         self.next = None
 #Очевидные комментарии
+#Отступы после классов
 
 class LinkedList:
+
     def __init__(self):
         self.head = None
 
