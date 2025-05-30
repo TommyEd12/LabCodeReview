@@ -1,7 +1,3 @@
-"""Дан односвязный линейный список и указатель на голову списка P1.
- Необходимо вставить значение node_value после каждого четвертого элемента списка, и
- вывести ссылку на последний элемент полученного списка P2."""
-#Ряд комментариев, а не docstring
 class Node:
 
     def __init__(self, data):
@@ -25,6 +21,7 @@ class LinkedList:
             current = current.next
         current.next = new_node
     #Очевидные комментарии
+
     def insert_after_every_fourth(self, node_value):
         #Название переменной из одной буквы
         current = self.head
